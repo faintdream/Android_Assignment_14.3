@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akashdubey.internalstorage.MainActivity">
+
+
+    <EditText
+        android:id="@+id/messageET"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Input some message"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/messageET"
+        android:layout_marginTop="68dp"
+        android:text="save msg" />
+
+    <Button
+        android:id="@+id/readBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/saveBtn"
+        android:text="read msg" />
+
+    <TextView
+        android:id="@+id/readMessageTV"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/saveBtn"
+        android:layout_marginTop="68dp"
+        android:text="File will be read Here "
+        android:textSize="24sp" />
+</RelativeLayout>
